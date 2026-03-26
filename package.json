@@ -5,10 +5,10 @@
   "type": "module",
   "homepage": "https://osipovfrontend.github.io/product-admin",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "build": "vite build",
+    "dev": "vite"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
