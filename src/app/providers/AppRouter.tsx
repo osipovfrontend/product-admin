@@ -1,4 +1,4 @@
-import { Routes, Route, Navigate, HashRouter } from 'react-router-dom'
+import { Routes, Route, Navigate, HashRouter, BrowserRouter } from 'react-router-dom'
 import { useAuthStore } from '../../features/auth'
 import { LoginPage } from '../../pages/LoginPage/LoginPage'
 import { ProductsPage } from '../../pages/ProductsPage/ProductsPage'
@@ -39,7 +39,7 @@ export function AppRouter() {
     }
 
     return (
-        <HashRouter>
+        <BrowserRouter>
             <Routes>
                 <Route path="/login" element={<LoginPage />} />
                 <Route
@@ -52,6 +52,6 @@ export function AppRouter() {
                 />
                 <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
-        </HashRouter>
+        </BrowserRouter>
     )
 }
