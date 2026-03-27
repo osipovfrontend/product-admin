@@ -1,5 +1,3 @@
-// src/features/auth/ui/LoginForm.tsx
-
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import {
@@ -29,7 +27,6 @@ export const LoginForm = () => {
     const [loading, setLoading] = useState(false)
     const [error, setError] = useState<string | null>(null)
 
-    // Если уже авторизован - редирект
     useEffect(() => {
         if (isAuthenticated) {
             navigate('/')

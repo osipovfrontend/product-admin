@@ -44,5 +44,5 @@ export interface EnhancedTableToolbarProps {
     loading: boolean;
     onResetSort?: () => void;
     onAddProduct: () => void;
-    onRefresh?: () => void;  // Добавляем пропс
+    onRefresh?: () => void;
 }

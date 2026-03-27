@@ -9,7 +9,6 @@ export const AuthLoader = ({ children }: { children: React.ReactNode }) => {
         loadFromStorage()
     }, [loadFromStorage])
 
-    // Показываем лоадер пока идет загрузка
     if (isLoading) {
         return (
             <div style={{
